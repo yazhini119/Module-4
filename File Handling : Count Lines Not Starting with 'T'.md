@@ -10,10 +10,26 @@ To write a Python program that counts the number of lines in a text file `story.
    - Check if the first character of the line is **not** `'T'`.
    - If the line does not start with `'T'`, increment the `count` by 1.
 4. After processing all lines, print the `count` value, which represents the number of lines that do not start with `'T'`.
-
 ## 🧾 Program
-Add code here
+```
+def create_file(file_path, content):
+    with open(file_path, 'w') as file:
+        file.write(content)
+def find_and_replace(file_path, old_word, new_word):
+    with open(file_path,'r')as f:
+        cr=f.read()
+        l=cr.replace(old_word,new_word)
+    with open(file_path,'w') as f:
+        f.write(l)
+
+
+def read_file(file_path):
+    with open(file_path, 'r') as file:
+        return file.read()
+```
 
 ## Output
+<img width="1176" height="616" alt="447238828-3cce9630-0e78-46ae-8047-d13e862e936c" src="https://github.com/user-attachments/assets/cc5fe159-f919-44f4-8b04-88ad8d76f182" />
 
 ## Result
+Thus the Python function to find and replace a word in a file is executed successfully.
